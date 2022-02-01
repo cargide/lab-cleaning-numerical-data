@@ -66,3 +66,21 @@ Using the same data as the previous lab: we_fn_use_c_marketing_customer_value_an
 8. Compare policy_type and policy.  What information is contained in these columns.  Can you identify what is important?  
 
 9. Check number of unique values in each column, can they be combined in any way to ease encoding?  Comment your thoughts and make those changes.
+
+
+# Lab | Feature extraction
+
+For this lab, we will be using the same dataset we used in the previous labs. We recommend using the same notebook since you will be reusing the same variables you previous created and used in labs. 
+
+### Instructions
+
+1. Open the `categoricals` variable we created before.
+
+```python
+categoricals = data.select_dtypes(np.object)
+categoricals.head()
+```
+
+2. Plot all the categorical variables with the proper plot. What can you see?
+3. There might be some columns that seem to be redundant, check their values to be sure. What should we do with them?
+4. Plot time variable. Can you extract something from it?
